@@ -1,31 +1,29 @@
-# examqt1819
-construyan un nuevo servicio con las siguientes características:
-- Añadir usuarios al sistema.   // usurio
-- Obtener información sobre los usuarios.// info usuario
-- Mostrar las bicicletas disponibles. // productos
+Examen 16.11.2018
 
-
-PARTE I: 6 puntos
-1. Implementación de la fachada (MyBike.java): MyBikeImpl.java
-1.1. Las estructuras de datos que se deben utilizar serán las siguientes:
-● Array para almacenar las estaciones (objeto [])//estaciones 
-● LinkedList para guardar las bicicletas de una estación.//
-● HashMap para almacenar los usuarios.//usuarios
-● LinkedList para almacenar las bicicletas de un usuario//listado pedidos realizados
-1.2. La Fachada se implementará como un patrón Singleton.
-1.3. Todas las operaciones tendrán registros de depuración (LOG4J) al principio y al final de cada una.
-Registros de operación y error cuando se lanzan las excepciones.
-1.4. Integración en una prueba JUNIT proporcionada
-
-PARTE II: 4 puntos
-1. Implementar un servicio REST (utilizando las bibliotecas de Jersey) que permita mostrar el
-operaciones de la fachada: addUser, addStation, addBike, bikesByStationOrderByKms,
-GetBike, bicicletasByUser. Definir las rutas y métodos HTP para cada operación.
-2. Agregue las anotaciones swagger en el servicio REST y genere la documentación
-
-
-NOTA:
-- No está permitido el uso de "System.out.println"
-- Debes utilizar la herramienta Maven para gestionar las bibliotecas.
-- La entrega se debe realizar en un repositorio Github y cargar un archivo de texto en la tarea Atenea con
-la URL del representante
+The EETAC wants to offer a new service to campus to allow their members to share electrical
+bikes.
+For this reason, it requests that DSA students build a new service with the following features:
+- Add users to the system
+- Get information about users
+- Show the available bikes
+PART I: 6 points
+1. Implementation of the Façade (MyBike.java): MyBikeImpl.java
+1.1. The data structures that should be used will be the following:
+● Array to store the Stations (Object[] )
+● LinkedList to store the bikes of a Station
+● HashMap to store the Users
+● LinkedList to store the bikes of a User
+1.2. The Façade will be implemented as a Singleton pattern
+1.3. All the operations will have debug logs (LOG4J) at the beginning and end of each
+operation and error logs when the exceptions are thrown
+1.4. Integration on a JUNIT test provided
+PART II: 4 points
+1. Implement a REST Service (using the Jersey libraries) that allows showing the
+operations of the façade: addUser, addStation, addBike, bikesByStationOrderByKms,
+getBike, bikesByUser. Define the routes and HTP methods for each operation
+2. Add the swagger annotations on the REST service and generate the documentation
+NOTE:
+- It is not allowed the use of “System.out.println”
+- You should use the Maven tool to manage the libraries
+- The delivery should be made on a Github repository and upload a text file on Atenea task with
+the URL of the repo
