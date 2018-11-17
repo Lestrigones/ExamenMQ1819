@@ -25,5 +25,4 @@ getBike, bikesByUser. Define the routes and HTP methods for each operation
 NOTE:
 - It is not allowed the use of “System.out.println”
 - You should use the Maven tool to manage the libraries
-- The delivery should be made on a Github repository and upload a text file on Atenea task with
-the URL of the repo
+- The delivery should be made on a Github repository and upload a text file on Atenea task with the URL of the repo
